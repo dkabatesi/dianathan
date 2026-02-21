@@ -1,94 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Dianathan Wedding</title>
 
 <link rel="stylesheet" href="style.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+
+<!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-
-<!-- OPENING SCREEN -->
-
-<div id="opening" class="opening">
-
-<h1>Dianathan</h1>
-
-<p>Diane Kamikazi & Jonathan Nshuti</p>
-
-<button onclick="openInvitation()">
-Open Invitation
-</button>
-
-</div>
-
-
-
-<!-- MAIN CONTENT -->
-
-<div id="main" style="display:none;">
-
+<!-- HERO SECTION -->
 
 <section class="hero">
 
+<div class="hero-content" data-aos="fade-up" data-aos-duration="2000">
+
 <h1>Dianathan</h1>
 
-<p>December 12, 2026</p>
+<p class="names">
+Diane Kamikazi & Jonathan Nshuti
+</p>
+
+<p class="date">
+December 12, 2026
+</p>
 
 <p id="countdown"></p>
+
+</div>
 
 </section>
 
 
 
-<section class="support">
+<!-- INVITATION MESSAGE -->
 
-<h2>Support Our Wedding</h2>
+<section class="section" data-aos="fade-up">
+
+<h2>You're Invited</h2>
+
+<p>
+Together with their families,<br>
+Diane Kamikazi & Jonathan Nshuti<br>
+joyfully invite you to celebrate their wedding.
+</p>
+
+</section>
 
 
-<div class="momo">
+
+<!-- EVENT DETAILS -->
+
+<section class="section dark" data-aos="fade-right">
+
+<h2>Wedding Details</h2>
+
+<p>
+Date: December 12, 2026<br>
+Location: Kigali, Rwanda<br>
+Reception: To be announced
+</p>
+
+</section>
+
+
+
+<!-- GALLERY -->
+
+<section class="section" data-aos="fade-up">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="images/photo1.jpg" data-aos="zoom-in">
+<img src="images/photo2.jpg" data-aos="zoom-in" data-aos-delay="200">
+<img src="images/photo3.jpg" data-aos="zoom-in" data-aos-delay="400">
+
+</div>
+
+</section>
+
+
+
+<!-- SUPPORT SECTION -->
+
+<section class="section dark" data-aos="fade-up">
+
+<h2>Support Our Journey</h2>
+
+<p>
+Your presence is our greatest gift.  
+If you wish to support us, you may send via Mobile Money.
+</p>
+
+<div class="momo" data-aos="fade-left">
 
 <h3>MTN MoMo</h3>
 
 <p>0788326552</p>
 
-<button onclick="copyNumber('*182*1*1*0788326552#')">
-Copy Number
-</button>
+<button onclick="copyNumber('0788326552')">Copy Number</button>
 
 </div>
 
 
-<div class="momo">
+<div class="momo" data-aos="fade-right">
 
 <h3>Airtel Money</h3>
 
 <p>0780798374</p>
 
-<button onclick="copyNumber('*182*1*1*0780798374#')">
-Send Money
-</button>
+<button onclick="copyNumber('0780798374')">Copy Number</button>
 
 </div>
-
 
 </section>
 
 
-</div>
+
+<footer data-aos="fade-in">
+
+<p>Dianathan Wedding © 2026</p>
+
+</footer>
 
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="script.js"></script>
 
-
 </body>
-
 </html>
