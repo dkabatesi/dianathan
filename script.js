@@ -12,7 +12,7 @@ function copyNumber(number){
 
 navigator.clipboard.writeText(number);
 
-alert("Number copied successfully");
+alert("Thank you for Supporting Us");
 
 }
 
