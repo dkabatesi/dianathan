@@ -3,72 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dianathan Wedding Invitation</title>
+<title>Diane & Jonathan Wedding</title>
 
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Floating hearts -->
-<div class="hearts"></div>
-
 <!-- Music -->
-<audio id="music" loop>
+<audio id="music" autoplay loop>
   <source src="images/music.mp3" type="audio/mp3">
 </audio>
 
 <button class="music-btn" onclick="toggleMusic()">🎵</button>
 
-<!-- Envelope -->
-<section class="envelope-section" id="envelope">
-  <div class="envelope" onclick="openInvitation()">
-    <div class="flap"></div>
-    <div class="message">
-      <h2>You're Invited</h2>
-      <p>Tap to Open</p>
-    </div>
-  </div>
-</section>
+<!-- HERO -->
+<section class="hero">
 
-<!-- Invitation -->
-<section class="invitation hidden" id="invitation">
+  <div class="overlay"></div>
 
-  <!-- Hero -->
-  <div class="hero">
+  <div class="hero-content">
     <h1>Diane</h1>
-    <span>&</span>
+    <div class="and">&</div>
     <h1>Jonathan</h1>
 
-    <p class="date">We are getting married</p>
+    <p class="tagline">
+      Together with our families,<br>
+      we joyfully invite you to celebrate our love
+    </p>
 
     <div id="countdown"></div>
   </div>
 
-  <!-- Event -->
-  <div class="details">
-    <h2>Wedding Details</h2>
+</section>
 
-    <p>📅 Date: 20 December 2026</p>
-    <p>📍 Location: Kigali, Rwanda</p>
-    <p>⏰ Time: 3:00 PM</p>
+<!-- DETAILS -->
+<section class="details">
+
+  <h2>Wedding Details</h2>
+
+  <div class="info-box">
+    <p><strong>Date:</strong> 20 December 2026</p>
+    <p><strong>Time:</strong> 3:00 PM</p>
+    <p><strong>Venue:</strong> Kigali Convention Centre, Kigali</p>
   </div>
 
-  <!-- Payment -->
-  <div class="payment">
-    <h2>Support Our Wedding</h2>
+  <a 
+    href="https://www.google.com/maps/search/?api=1&query=Kigali+Convention+Centre" 
+    target="_blank"
+    class="map-btn">
+    View Location on Google Maps
+  </a>
 
-    <a href="tel:*182*8*1*123456%23" class="btn">
-      Pay via Code
-    </a>
+</section>
 
-    <a href="tel:*182*1*1*0781234567%23" class="btn secondary">
-      Pay via MoMo Number
-    </a>
+<!-- SWEET MESSAGE -->
+<section class="message">
 
-  </div>
+  <h2>A Sweet Note</h2>
+
+  <p>
+    Your presence at our wedding is the greatest gift of all.  
+    However, if you wish to bless us as we begin our new journey together,
+    a contribution toward our honeymoon would mean the world to us.
+  </p>
+
+</section>
+
+<!-- PAYMENT -->
+<section class="payment">
+
+  <h2>Support Our Honeymoon 💕</h2>
+
+  <a href="tel:*182*8*1*123456%23" class="btn">
+    Pay via MoMo Code
+  </a>
+
+  <a href="tel:*182*1*1*0781234567%23" class="btn secondary">
+    Pay via MoMo Number
+  </a>
 
 </section>
 
