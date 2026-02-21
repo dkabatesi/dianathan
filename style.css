@@ -1,7 +1,7 @@
 body {
 
 margin:0;
-font-family: Arial;
+font-family:Arial;
 background:black;
 color:white;
 text-align:center;
@@ -12,29 +12,16 @@ text-align:center;
 .opening {
 
 height:100vh;
+
 display:flex;
+
 flex-direction:column;
+
 justify-content:center;
+
 align-items:center;
 
-}
-
-
-button {
-
-padding:15px;
-margin-top:20px;
-font-size:18px;
-border-radius:10px;
-border:none;
-background:gold;
-
-}
-
-
-.hidden {
-
-display:none;
+background:black;
 
 }
 
@@ -42,13 +29,16 @@ display:none;
 .hero {
 
 height:100vh;
+
 display:flex;
+
 flex-direction:column;
+
 justify-content:center;
 
-background:url("images/bg.avif");
+align-items:center;
 
-background-size:cover;
+background:black;
 
 }
 
@@ -63,8 +53,32 @@ padding:30px;
 .momo {
 
 background:#111;
+
 padding:20px;
+
 margin-top:20px;
+
 border-radius:10px;
+
+}
+
+
+button {
+
+padding:15px;
+
+margin-top:10px;
+
+font-size:16px;
+
+border:none;
+
+border-radius:10px;
+
+background:gold;
+
+color:black;
+
+cursor:pointer;
 
 }
