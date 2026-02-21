@@ -1,141 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dianathan Wedding</title>
+<title>Dianathan Wedding Invitation</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
-
-<!-- AOS Animation Library -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- HERO SECTION -->
+<!-- Floating hearts -->
+<div class="hearts"></div>
 
-<section class="hero">
+<!-- Music -->
+<audio id="music" loop>
+  <source src="images/music.mp3" type="audio/mp3">
+</audio>
 
-<div class="hero-content" data-aos="fade-up" data-aos-duration="2000">
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
 
-<h1>Dianathan</h1>
+<!-- Envelope -->
+<section class="envelope-section" id="envelope">
+  <div class="envelope" onclick="openInvitation()">
+    <div class="flap"></div>
+    <div class="message">
+      <h2>You're Invited</h2>
+      <p>Tap to Open</p>
+    </div>
+  </div>
+</section>
 
-<p class="names">
-Diane Kamikazi & Jonathan Nshuti
-</p>
+<!-- Invitation -->
+<section class="invitation hidden" id="invitation">
 
-<p class="date">
-December 12, 2026
-</p>
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Diane</h1>
+    <span>&</span>
+    <h1>Jonathan</h1>
 
-<p id="countdown"></p>
+    <p class="date">We are getting married</p>
 
-</div>
+    <div id="countdown"></div>
+  </div>
+
+  <!-- Event -->
+  <div class="details">
+    <h2>Wedding Details</h2>
+
+    <p>📅 Date: 20 December 2026</p>
+    <p>📍 Location: Kigali, Rwanda</p>
+    <p>⏰ Time: 3:00 PM</p>
+  </div>
+
+  <!-- Payment -->
+  <div class="payment">
+    <h2>Support Our Wedding</h2>
+
+    <a href="tel:*182*8*1*123456%23" class="btn">
+      Pay via Code
+    </a>
+
+    <a href="tel:*182*1*1*0781234567%23" class="btn secondary">
+      Pay via MoMo Number
+    </a>
+
+  </div>
 
 </section>
 
-
-
-<!-- INVITATION MESSAGE -->
-
-<section class="section" data-aos="fade-up">
-
-<h2>You're Invited</h2>
-
-<p>
-Together with their families,<br>
-Diane Kamikazi & Jonathan Nshuti<br>
-joyfully invite you to celebrate their wedding.
-</p>
-
-</section>
-
-
-
-<!-- EVENT DETAILS -->
-
-<section class="section dark" data-aos="fade-right">
-
-<h2>Wedding Details</h2>
-
-<p>
-Date: December 12, 2026<br>
-Location: Kigali, Rwanda<br>
-Reception: To be announced
-</p>
-
-</section>
-
-
-
-<!-- GALLERY -->
-
-<section class="section" data-aos="fade-up">
-
-<h2>Gallery</h2>
-
-<div class="gallery">
-
-<img src="images/photo1.jpg" data-aos="zoom-in">
-<img src="images/photo2.jpg" data-aos="zoom-in" data-aos-delay="200">
-<img src="images/photo3.jpg" data-aos="zoom-in" data-aos-delay="400">
-
-</div>
-
-</section>
-
-
-
-<!-- SUPPORT SECTION -->
-
-<section class="section dark" data-aos="fade-up">
-
-<h2>Support Our Journey</h2>
-
-<p>
-Your presence is our greatest gift.  
-If you wish to support us, you may send via Mobile Money.
-</p>
-
-<div class="momo" data-aos="fade-left">
-
-<h3>MTN MoMo</h3>
-
-<p>0788326552</p>
-
-<button onclick="copyNumber('0788326552')">Copy Number</button>
-
-</div>
-
-
-<div class="momo" data-aos="fade-right">
-
-<h3>Airtel Money</h3>
-
-<p>0780798374</p>
-
-<button onclick="copyNumber('0780798374')">Copy Number</button>
-
-</div>
-
-</section>
-
-
-
-<footer data-aos="fade-in">
-
-<p>Dianathan Wedding © 2026</p>
-
-</footer>
-
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="script.js"></script>
 
 </body>

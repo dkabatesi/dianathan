@@ -1,151 +1,152 @@
-body {
-
+body{
 margin:0;
-font-family:'Poppins',sans-serif;
-color:white;
-background:black;
-text-align:center;
-
+font-family:Poppins;
+background:#fff;
+color:#333;
+overflow-x:hidden;
 }
 
+/* Envelope */
 
-.hero {
-
+.envelope-section{
 height:100vh;
-
-background:url("images/bg.avif");
-
-background-size:cover;
-
-background-position:center;
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
+background:linear-gradient(135deg,#ffdde1,#ee9ca7);
 }
 
-
-.hero-content {
-
-background:rgba(0,0,0,0.5);
-
-padding:30px;
-
-border-radius:10px;
-
-}
-
-
-h1 {
-
-font-family:'Playfair Display',serif;
-font-size:40px;
-
-}
-
-
-.names {
-
-font-size:20px;
-
-}
-
-
-.date {
-
-margin-top:10px;
-
-}
-
-
-#countdown {
-
-margin-top:15px;
-
-color:gold;
-
-font-size:18px;
-
-}
-
-
-.section {
-
-padding:50px 20px;
-
-}
-
-
-.dark {
-
-background:#111;
-
-}
-
-
-.gallery {
-
-display:flex;
-
-flex-direction:column;
-
-gap:15px;
-
-}
-
-
-.gallery img {
-
-width:100%;
-
-border-radius:10px;
-
-}
-
-
-.momo {
-
-margin-top:20px;
-
-}
-
-
-button {
-
-padding:12px 20px;
-
-border:none;
-
-border-radius:8px;
-
-background:gold;
-
-color:black;
-
-font-size:16px;
-
+.envelope{
+width:300px;
+height:200px;
+background:white;
+position:relative;
 cursor:pointer;
-
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+display:flex;
+align-items:center;
+justify-content:center;
 }
 
-
-footer {
-
-padding:20px;
-
-background:black;
-
-color:gray;
-
-}
-html {
-scroll-behavior: smooth;
+.message{
+text-align:center;
 }
 
-.section h2 {
-font-family:'Playfair Display', serif;
-margin-bottom:20px;
+.message h2{
+font-family:'Great Vibes';
+font-size:32px;
+}
+
+/* Invitation */
+
+.hidden{
+display:none;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:url("images/bg.jpg") center/cover;
+color:white;
+text-shadow:0 0 10px black;
+}
+
+.hero h1{
+font-family:'Great Vibes';
+font-size:60px;
+margin:0;
+animation:fadeUp 2s;
+}
+
+.hero span{
+font-size:30px;
+}
+
+.date{
+font-size:20px;
+margin-top:10px;
+}
+
+#countdown{
+font-size:30px;
+margin-top:20px;
+}
+
+/* Details */
+
+.details{
+text-align:center;
+padding:50px;
+background:#fff;
+}
+
+/* Buttons */
+
+.payment{
+text-align:center;
+padding:50px;
+}
+
+.btn{
+display:inline-block;
+margin:10px;
+padding:15px 30px;
+border-radius:30px;
+background:#ff6b6b;
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+.secondary{
+background:#6b73ff;
+}
+
+/* Music button */
+
+.music-btn{
+position:fixed;
+top:20px;
+right:20px;
+font-size:25px;
+background:white;
+border:none;
+padding:10px;
+border-radius:50%;
+cursor:pointer;
+}
+
+/* Animations */
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Hearts */
+
+.hearts::before{
+content:"❤️ ❤️ ❤️ ❤️ ❤️";
+position:fixed;
+animation:float 10s linear infinite;
+}
+
+@keyframes float{
+from{transform:translateY(100vh);}
+to{transform:translateY(-10vh);}
 }
