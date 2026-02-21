@@ -1,106 +1,70 @@
 body {
 
-margin: 0;
-font-family: Arial, sans-serif;
-background: black;
-color: white;
+margin:0;
+font-family: Arial;
+background:black;
+color:white;
+text-align:center;
 
 }
+
+
+.opening {
+
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+}
+
+
+button {
+
+padding:15px;
+margin-top:20px;
+font-size:18px;
+border-radius:10px;
+border:none;
+background:gold;
+
+}
+
+
+.hidden {
+
+display:none;
+
+}
+
 
 .hero {
 
-height: 100vh;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
 
-background: url("images/bg.jpg");
+background:url("images/bg.jpg");
 
-background-size: cover;
-
-background-position: center;
-
-display: flex;
-
-justify-content: center;
-
-align-items: center;
-
-text-align: center;
+background-size:cover;
 
 }
 
-.overlay {
-
-background: rgba(0,0,0,0.6);
-
-padding: 20px;
-
-border-radius: 10px;
-
-}
-
-.title {
-
-font-size: 40px;
-
-}
-
-.names {
-
-font-size: 22px;
-
-}
-
-.date {
-
-margin-top: 10px;
-
-font-size: 18px;
-
-}
-
-.countdown {
-
-margin-top: 20px;
-
-font-size: 20px;
-
-color: gold;
-
-}
-
-.btn {
-
-margin-top: 20px;
-
-padding: 15px;
-
-border: none;
-
-border-radius: 10px;
-
-background: gold;
-
-color: black;
-
-font-size: 16px;
-
-}
 
 .support {
 
-padding: 30px;
-
-text-align: center;
+padding:30px;
 
 }
 
-.momo-box {
 
-margin-top: 20px;
+.momo {
 
-padding: 20px;
-
-background: #111;
-
-border-radius: 10px;
+background:#111;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
 
 }

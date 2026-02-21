@@ -13,49 +13,51 @@
 
 <body>
 
-<!-- HERO SECTION -->
 
-<section class="hero">
+<!-- OPENING SCREEN -->
 
-<div class="overlay">
+<div class="opening" id="opening">
 
-<h1 class="title">Dianathan</h1>
+<h1>Dianathan</h1>
 
-<p class="names">
-Diane Kamikazi <br> & <br> Jonathan Nshuti
-</p>
+<p>Diane & Jonathan</p>
 
-<p class="date">
-December 12, 2026
-</p>
-
-<p id="countdown" class="countdown"></p>
-
-<button class="btn" onclick="scrollToSupport()">
-Support Our Journey ❤️
+<button onclick="openInvitation()">
+Open Invitation
 </button>
 
 </div>
 
+
+
+<!-- MAIN CONTENT -->
+
+<div id="main" class="hidden">
+
+
+<section class="hero">
+
+<h1>Dianathan</h1>
+
+<p>Diane Kamikazi & Jonathan Nshuti</p>
+
+<p>December 12, 2026</p>
+
+<p id="countdown"></p>
+
 </section>
 
 
-<!-- SUPPORT SECTION -->
 
 <section class="support">
 
 <h2>Support Our Wedding</h2>
 
-<p>
-Your presence is our greatest gift.  
-If you wish, you may support us via Mobile Money.
-</p>
-
-<div class="momo-box">
+<div class="momo">
 
 <h3>MTN MoMo</h3>
 
-<p id="mtn">0788326552</p>
+<p>0788326552</p>
 
 <button onclick="copyNumber('0788326552')">
 Copy Number
@@ -64,11 +66,11 @@ Copy Number
 </div>
 
 
-<div class="momo-box">
+<div class="momo">
 
 <h3>Airtel Money</h3>
 
-<p id="airtel">0780798374</p>
+<p>0780798374</p>
 
 <button onclick="copyNumber('0780798374')">
 Copy Number
@@ -79,8 +81,11 @@ Copy Number
 </section>
 
 
+</div>
+
+
+
 <script src="script.js"></script>
 
 </body>
-
 </html>
