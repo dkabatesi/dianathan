@@ -1,22 +1,106 @@
-body{
-margin:0;
-font-family:Arial;
-text-align:center;
-background:black;
-color:white;
+body {
+
+margin: 0;
+font-family: Arial, sans-serif;
+background: black;
+color: white;
+
 }
 
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
+.hero {
+
+height: 100vh;
+
+background: url("images/bg.jpg");
+
+background-size: cover;
+
+background-position: center;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+text-align: center;
+
 }
 
-button{
-padding:15px;
-margin:10px;
-font-size:16px;
-border:none;
-border-radius:10px;
+.overlay {
+
+background: rgba(0,0,0,0.6);
+
+padding: 20px;
+
+border-radius: 10px;
+
+}
+
+.title {
+
+font-size: 40px;
+
+}
+
+.names {
+
+font-size: 22px;
+
+}
+
+.date {
+
+margin-top: 10px;
+
+font-size: 18px;
+
+}
+
+.countdown {
+
+margin-top: 20px;
+
+font-size: 20px;
+
+color: gold;
+
+}
+
+.btn {
+
+margin-top: 20px;
+
+padding: 15px;
+
+border: none;
+
+border-radius: 10px;
+
+background: gold;
+
+color: black;
+
+font-size: 16px;
+
+}
+
+.support {
+
+padding: 30px;
+
+text-align: center;
+
+}
+
+.momo-box {
+
+margin-top: 20px;
+
+padding: 20px;
+
+background: #111;
+
+border-radius: 10px;
+
 }
